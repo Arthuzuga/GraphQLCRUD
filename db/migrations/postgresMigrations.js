@@ -22,4 +22,27 @@ export default {
             "lastActiveAt" DATE NOT NULL
     );
     `,
+    3: `
+        CREATE TABLE "TB_AUDIO"(
+            "id" TEXT PRIMARY KEY NOT NULL,
+            "userId" TEXT NOT NULL,
+            "audioUrl" TEXT NOT NULL,
+            "createdAt" DATE NOT NULL,
+            "updatedAt" DATE NOT NULL,
+            "createdBy" TEXT NOT NULL,
+            "updatedBy" TEXT NOT NULL,
+        );
+    `,
+    4: `
+        CREATE TABLE "TB_INFO"(
+            "id" TEXT PRIMARY KEY NOT NULL,
+            "username" TEXT NOT NULL,
+            "location" TEXT NOT NULL,
+            "phoneNumber" TEXT NOT NULL,
+            "createdAt" DATE NOT NULL,
+            "inputText1" TEXT NOT NULL,
+            "inputText2" TEXT NOT NULL,
+            
+        )
+    `,
 }
